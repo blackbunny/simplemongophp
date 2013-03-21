@@ -153,7 +153,9 @@ You could retrieve how good Jack is at surgery one of two ways:
  - Support for readSlave() -- tell a script to perform all reads
  on a slave and writes on a master (will add replica set SLAVE_OK
  support when that gets added to Mongo)
-
+ - Add immortal for find (Murat Kucukosman)
+ - Add aggregation method (Murat Kucukosman)
+ 
 
 License Information
 -------------------
