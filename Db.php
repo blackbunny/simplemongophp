@@ -202,6 +202,7 @@ class Db {
         $col = self::getCollection($collection, true);
         $fields = isset($options['fields']) ? $options['fields'] : array();
         $result = $col->find($query, $fields);
+        $result->immortal(true);
         if (isset($options['sort']) && $options['sort'] !== null) {
             $result->sort($options['sort']);
         }
