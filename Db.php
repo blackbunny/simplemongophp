@@ -422,6 +422,11 @@ class Db {
         $col = self::getCollection($collection, true);
         return $col->group($keys, $initial, $reduce, $condition);
     }
+    
+    static function aggregate($collection, array $pipe) {
+        $col = self::getCollection($collection, true);
+        return self::aggregate($pipe);
+    }
 
     /**
      * Shortcut for MongoCollection's ensureIndex() method
