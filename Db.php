@@ -425,6 +425,7 @@ class Db {
     
     static function aggregate($collection, array $pipe) {
         $col = self::getCollection($collection, true);
+        
         return self::aggregate($pipe);
     }
 
